@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Sneakers | E-commerce Product Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <img src="./images/icon-menu.svg" alt="Menu" />
+        </button>
+
+        <a href="#" class="logo">
+          <h1>sneakers</h1>
+        </a>
+
+        <nav class="nav" id="mainNav">
+          <button class="mobile-menu-close" id="mobileMenuClose">
+            <img src="./images/icon-close.svg" alt="Close menu" />
+          </button>
+
+          <ul class="nav__list">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <div class="cart" id="cartContainer">
+            <button class="cart__btn" id="cartBtn">
+              <img src="./images/icon-cart.svg" alt="Cart" />
+              <span class="cart__count" id="cartCount">0</span>
+            </button>
+            <div class="cart__dropdown" id="cartDropdown">
+              <h3 class="cart__title">Cart</h3>
+              <div class="cart__content" id="cartContent">
+                <p class="cart__empty">Your cart is empty</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./images/image-avatar.png"
+            alt="User avatar"
+            class="avatar"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="product">
+        <div class="product__gallery">
+          <div class="product__main-image">
+            <img
+              src="./images/image-product-1.jpg"
+              alt="Fall Limited Edition Sneakers"
+              id="mainImage"
+            />
+            <button class="lightbox-btn prev" id="prevBtn">
+              <img src="./images/icon-previous.svg" alt="Previous" />
+            </button>
+            <button class="lightbox-btn next" id="nextBtn">
+              <img src="./images/icon-next.svg" alt="Next" />
+            </button>
+          </div>
+
+          <div class="product__thumbnails">
+            <button class="thumbnail" data-image="1">
+              <img
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="Sneaker thumbnail 1"
+              />
+            </button>
+            <button class="thumbnail" data-image="2">
+              <img
+                src="./images/image-product-2-thumbnail.jpg"
+                alt="Sneaker thumbnail 2"
+              />
+            </button>
+            <button class="thumbnail" data-image="3">
+              <img
+                src="./images/image-product-3-thumbnail.jpg"
+                alt="Sneaker thumbnail 3"
+              />
+            </button>
+            <button class="thumbnail" data-image="4">
+              <img
+                src="./images/image-product-4-thumbnail.jpg"
+                alt="Sneaker thumbnail 4"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="product__info">
+          <span class="product__brand">SNEAKER COMPANY</span>
+          <h2 class="product__title">Fall Limited Edition Sneakers</h2>
+          <p class="product__description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+
+          <div class="product__pricing">
+            <div class="price__current">
+              <span class="price">$125.00</span>
+              <span class="discount">50%</span>
+            </div>
+            <span class="price__original">$250.00</span>
+          </div>
+
+          <div class="product__actions">
+            <div class="quantity">
+              <button class="quantity__btn" id="decrementBtn">-</button>
+              <span class="quantity__value" id="quantityValue">0</span>
+              <button class="quantity__btn" id="incrementBtn">+</button>
+            </div>
+            <button class="add-to-cart" id="addToCartBtn">
+              <img src="./images/icon-cart-white.svg" alt="" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox__content">
+        <button class="lightbox__close" id="lightboxClose">
+          <img src="./images/icon-close.svg" alt="Close lightbox" />
+        </button>
+        <div class="lightbox__main-image">
+          <img
+            src="./images/image-product-1.jpg"
+            alt="Fall Limited Edition Sneakers"
+            id="lightboxImage"
+          />
+          <button class="lightbox-btn prev" id="lightboxPrevBtn">
+            <img src="./images/icon-previous.svg" alt="Previous" />
+          </button>
+          <button class="lightbox-btn next" id="lightboxNextBtn">
+            <img src="./images/icon-next.svg" alt="Next" />
+          </button>
+        </div>
+        <div class="lightbox__thumbnails">
+          <button class="thumbnail" data-lightbox-image="1">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="Sneaker thumbnail 1"
+            />
+          </button>
+          <button class="thumbnail" data-lightbox-image="2">
+            <img
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="Sneaker thumbnail 2"
+            />
+          </button>
+          <button class="thumbnail" data-lightbox-image="3">
+            <img
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="Sneaker thumbnail 3"
+            />
+          </button>
+          <button class="thumbnail" data-lightbox-image="4">
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="Sneaker thumbnail 4"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
