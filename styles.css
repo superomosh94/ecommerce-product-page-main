@@ -22,6 +22,7 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   color: var(--very-dark-blue);
   position: relative;
+  height: 100vh;
 }
 
 img {
