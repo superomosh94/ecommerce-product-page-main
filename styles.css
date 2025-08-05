@@ -38,7 +38,7 @@ button {
 
 /* Header */
 .header {
-  padding: 1.5rem;
+  padding: 30px;
   border-bottom: 1px solid var(--light-grayish-blue);
   position: relative;
 }
@@ -70,7 +70,7 @@ button {
   text-decoration: none;
   color: var(--dark-grayish-blue);
   position: relative;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .nav__list a:hover::after {
@@ -227,17 +227,23 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* display: none; */
+}
+.mobile-menu-close {
   display: none;
 }
-
 .lightbox-btn.prev {
   left: 1rem;
+  /* z-index: 10000; */
 }
 
 .lightbox-btn.next {
   right: 1rem;
 }
-
+.next1,
+.back1 {
+  display: none;
+}
 .product__thumbnails {
   display: flex;
   gap: 1.5rem;
@@ -392,7 +398,7 @@ button {
 
 .lightbox__content {
   position: relative;
-  max-width: 550px;
+  max-width: 350px;
 }
 
 .lightbox__close {
