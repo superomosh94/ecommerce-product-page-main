@@ -218,7 +218,7 @@ button {
 }
 
 .lightbox-btn {
-  position: absolute;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
   width: 40px;
@@ -234,12 +234,15 @@ button {
   display: none;
 }
 .lightbox-btn.prev {
-  left: 1rem;
-  /* z-index: 10000; */
+  position: absolute;
+  top: 50%;
+  left: 0.5 rem;
 }
 
 .lightbox-btn.next {
-  right: 1rem;
+  position: absolute;
+  top: 50%;
+  right: 0.3rem;
 }
 .next1,
 .back1 {
